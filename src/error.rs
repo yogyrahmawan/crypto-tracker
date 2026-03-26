@@ -11,6 +11,6 @@ pub enum AppError {
     #[error("Serialization error: {0}")]
     Serialization(#[from] serde_json::Error),
 
-    #error("Configuration error: {0}")]
+    #[error("Configuration error: {0}")]
     Config(String),
 }
